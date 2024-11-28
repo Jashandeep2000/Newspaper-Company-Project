@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="550.0" minWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="Collector.CollectorController">
+   <children>
+      <Label layoutX="206.0" layoutY="46.0" text="Bill Collector" textFill="#8d2f2f">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="124.0" text="Mobile Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="230.0" layoutY="122.0" prefHeight="31.0" prefWidth="234.0" />
+      <Button fx:id="btnFetch" layoutX="242.0" layoutY="172.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="34.0" prefWidth="73.0" style="-fx-font-weight: bold;" text="Fetch" />
+      <ListView fx:id="lst1" layoutX="36.0" layoutY="266.0" onMouseClicked="#doSelect" prefHeight="131.0" prefWidth="138.0" />
+      <Label layoutX="48.0" layoutY="224.0" text="Date of Start">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="224.0" text="Date of End">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="224.0" text="Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lst2" layoutX="209.0" layoutY="266.0" prefHeight="131.0" prefWidth="138.0" />
+      <ListView fx:id="lst3" layoutX="377.0" layoutY="266.0" prefHeight="131.0" prefWidth="138.0" />
+      <Button fx:id="btnCollect" layoutX="242.0" layoutY="424.0" mnemonicParsing="false" onAction="#doCollect" prefHeight="34.0" prefWidth="73.0" style="-fx-font-weight: bold;" text="Collect" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="550.0" minWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="billStatus.billStatusController">
+   <children>
+      <Label layoutX="212.0" layoutY="14.0" text="Bill Status" textFill="#a85353">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radPending" layoutX="110.0" layoutY="86.0" mnemonicParsing="false" onAction="#doPending" style="-fx-font-weight: bold;" text="Pending">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radReceived" layoutX="294.0" layoutY="86.0" mnemonicParsing="false" onAction="#doReceived" style="-fx-font-weight: bold;" text="Received">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="tableView" layoutX="41.0" layoutY="155.0" prefHeight="361.0" prefWidth="468.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
